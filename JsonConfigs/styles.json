@@ -1,0 +1,34 @@
+[
+  {
+    "id": "demo-pixel-art",
+    "name": "Retro Pixel Art",
+    "description": "Nostalgic 16-bit retro video game pixel illustration.",
+    "image_prompt": "16-bit retro pixel art, crisp pixel grid, clean dithering, vibrant game aesthetic.",
+    "color_palette": "16-color retro palette.",
+    "lighting_style": "Flat directional ambient lighting."
+  },
+  {
+    "id": "demo-dot-art",
+    "name": "Indigenous Dot Art",
+    "description": "Spiritual Australian dot painting with earth ochres.",
+    "image_prompt": "Traditional Indigenous Australian dot painting style, dense concentric pointillism dots, earth pigments.",
+    "color_palette": "Natural red ochre, yellow ochre, pipeclay white.",
+    "lighting_style": "Flat matte natural."
+  },
+  {
+    "id": "demo-pop-art",
+    "name": "Pop Art",
+    "description": "Bold 1960s commercial pop art with Ben-Day dots.",
+    "image_prompt": "1960s pop art style, prominent Ben-Day dots, thick black contours, vibrant primaries.",
+    "color_palette": "Electric primary red, cyan, yellow.",
+    "lighting_style": "Flat graphic poster lighting."
+  },
+  {
+    "id": "demo-vintage-film",
+    "name": "Vintage Film",
+    "description": "Warm analog 35mm film photograph with subtle grain.",
+    "image_prompt": "Vintage 35mm color film photograph, soft natural grain, warm color grade.",
+    "color_palette": "Kodachrome warm nostalgic palette.",
+    "lighting_style": "Golden hour natural sunlight."
+  }
+]

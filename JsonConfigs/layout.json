@@ -1,0 +1,22 @@
+{
+  "compositional_armatures": [
+    {
+      "category": "Harmonic Frameworks",
+      "layouts": [
+        {
+          "name": "The Rule of Thirds",
+          "description": "Classic grid placing subjects along intersecting third lines."
+        }
+      ]
+    },
+    {
+      "category": "Structural Progressions",
+      "layouts": [
+        {
+          "name": "The Central / Symmetrical Layout",
+          "description": "Direct symmetrical alignment providing impact and authority."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "LocationProperties": [
+    {
+      "property_name": "LocationType",
+      "definition": "Primary environment archetype",
+      "examples": [
+        "Urban Street - Bustling city commercial district",
+        "Ancient Temple - Sacred forgotten ruins"
+      ]
+    },
+    {
+      "property_name": "Structure",
+      "definition": "Architectural scale and structural materials",
+      "examples": [
+        "Towering stone masonry covered in weathered relief carvings.",
+        "Sleek modern interior of polished chrome and frosted glass."
+      ]
+    },
+    {
+      "property_name": "VisualState",
+      "definition": "Lighting, atmosphere and state of repair",
+      "examples": [
+        "Pristine and clean, lit by bright dramatic sunlight.",
+        "Dim and shadowed with high-contrast noir lighting."
+      ]
+    },
+    {
+      "property_name": "Atmosphere",
+      "definition": "Ambient pace, mood, and weather",
+      "examples": [
+        "Quiet and suspenseful with an ominous stillness.",
+        "Energetic and bustling with vibrant atmospheric motion."
+      ]
+    }
+  ]
+}

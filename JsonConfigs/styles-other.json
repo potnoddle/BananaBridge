@@ -1,0 +1,12 @@
+{
+  "styles": [
+    {
+      "id": "demo-pop-art",
+      "name": "Pop Art",
+      "description": "Bold 1960s commercial pop art with Ben-Day dots.",
+      "image_prompt": "1960s pop art style, prominent Ben-Day dots, thick black contours, vibrant primaries.",
+      "color_palette": "Electric primary red, cyan, yellow.",
+      "lighting_style": "Flat graphic poster lighting."
+    }
+  ]
+}

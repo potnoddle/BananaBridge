@@ -1,0 +1,12 @@
+{
+  "styles": [
+    {
+      "id": "demo-dot-art",
+      "name": "Indigenous Dot Art",
+      "description": "Spiritual Australian dot painting with earth ochres.",
+      "image_prompt": "Traditional Indigenous Australian dot painting style, dense concentric pointillism dots, earth pigments.",
+      "color_palette": "Natural red ochre, yellow ochre, pipeclay white.",
+      "lighting_style": "Flat matte natural."
+    }
+  ]
+}

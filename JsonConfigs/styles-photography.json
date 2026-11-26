@@ -1,0 +1,12 @@
+{
+  "styles": [
+    {
+      "id": "demo-vintage-film",
+      "name": "Vintage Film",
+      "description": "Warm analog 35mm film photograph with subtle grain.",
+      "image_prompt": "Vintage 35mm color film photograph, soft natural grain, warm color grade.",
+      "color_palette": "Kodachrome warm nostalgic palette.",
+      "lighting_style": "Golden hour natural sunlight."
+    }
+  ]
+}

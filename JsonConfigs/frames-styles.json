@@ -1,0 +1,28 @@
+{
+  "victorian_scene_frames": [
+    {
+      "style_type": "gilded_gallery",
+      "tone": "ornate",
+      "border_attributes": {
+        "weight": "heavy",
+        "corners": "ornate_leaf"
+      },
+      "base_style": {
+        "substrate": "gold_leaf_wood",
+        "relief": "embossed"
+      }
+    },
+    {
+      "style_type": "minimalist_ledger",
+      "tone": "clean",
+      "border_attributes": {
+        "weight": "thin",
+        "corners": "square"
+      },
+      "base_style": {
+        "substrate": "black_ink_paper",
+        "relief": "flat"
+      }
+    }
+  ]
+}

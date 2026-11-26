@@ -1,0 +1,94 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Platforms>x64</Platforms>
+    <RootNamespace>BananaBridge.UI</RootNamespace>
+    <AssemblyName>BananaBridge.UI</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <Version>1.0.0</Version>
+    <Configurations>Debug;Release</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="9.0.1" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="9.0.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OverrideConfigDir Condition="Exists('..\JsonConfigs.Override')">..\JsonConfigs.Override</OverrideConfigDir>
+    <OverrideConfigDir Condition="'$(OverrideConfigDir)' == '' and Exists('..\JsonConfigsOverride')">..\JsonConfigsOverride</OverrideConfigDir>
+  </PropertyGroup>
+
+  <!-- Embed configuration JSON files: check override directory first, falling back to default JsonConfigs -->
+  <ItemGroup>
+    <!-- styles.json -->
+    <EmbeddedResource Include="$(OverrideConfigDir)\styles.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\styles.json')" LogicalName="BananaBridge.UI.styles.json" />
+    <EmbeddedResource Include="..\JsonConfigs\styles.json" Condition="'$(OverrideConfigDir)' == '' or !Exists('$(OverrideConfigDir)\styles.json')" LogicalName="BananaBridge.UI.styles.json" />
+
+    <!-- default_models.json -->
+    <EmbeddedResource Include="$(OverrideConfigDir)\default_models.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\default_models.json')" LogicalName="BananaBridge.UI.default_models.json" />
+    <EmbeddedResource Include="..\JsonConfigs\default_models.json" Condition="'$(OverrideConfigDir)' == '' or !Exists('$(OverrideConfigDir)\default_models.json')" LogicalName="BananaBridge.UI.default_models.json" />
+
+    <!-- styles-digital.json -->
+    <EmbeddedResource Include="$(OverrideConfigDir)\styles-digital.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\styles-digital.json')" LogicalName="BananaBridge.UI.styles-digital.json" />
+    <EmbeddedResource Include="..\JsonConfigs\styles-digital.json" Condition="'$(OverrideConfigDir)' == '' or !Exists('$(OverrideConfigDir)\styles-digital.json')" LogicalName="BananaBridge.UI.styles-digital.json" />
+
+    <!-- styles-other.json -->
+    <EmbeddedResource Include="$(OverrideConfigDir)\styles-other.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\styles-other.json')" LogicalName="BananaBridge.UI.styles-other.json" />
+    <EmbeddedResource Include="..\JsonConfigs\styles-other.json" Condition="'$(OverrideConfigDir)' == '' or !Exists('$(OverrideConfigDir)\styles-other.json')" LogicalName="BananaBridge.UI.styles-other.json" />
+
+    <!-- styles-photography.json -->
+    <EmbeddedResource Include="$(OverrideConfigDir)\styles-photography.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\styles-photography.json')" LogicalName="BananaBridge.UI.styles-photography.json" />
+    <EmbeddedResource Include="..\JsonConfigs\styles-photography.json" Condition="'$(OverrideConfigDir)' == '' or !Exists('$(OverrideConfigDir)\styles-photography.json')" LogicalName="BananaBridge.UI.styles-photography.json" />
+
+    <!-- styles-global.json -->
+    <EmbeddedResource Include="$(OverrideConfigDir)\styles-global.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\styles-global.json')" LogicalName="BananaBridge.UI.styles-global.json" />
+    <EmbeddedResource Include="..\JsonConfigs\styles-global.json" Condition="'$(OverrideConfigDir)' == '' or !Exists('$(OverrideConfigDir)\styles-global.json')" LogicalName="BananaBridge.UI.styles-global.json" />
+
+    <!-- frames-styles.json -->
+    <EmbeddedResource Include="$(OverrideConfigDir)\frames-styles.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\frames-styles.json')" LogicalName="BananaBridge.UI.frames-styles.json" />
+    <EmbeddedResource Include="..\JsonConfigs\frames-styles.json" Condition="'$(OverrideConfigDir)' == '' or !Exists('$(OverrideConfigDir)\frames-styles.json')" LogicalName="BananaBridge.UI.frames-styles.json" />
+
+    <!-- comicbook-layouts.json -->
+    <EmbeddedResource Include="$(OverrideConfigDir)\comicbook-layouts.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\comicbook-layouts.json')" LogicalName="BananaBridge.UI.comicbook-layouts.json" />
+    <EmbeddedResource Include="..\JsonConfigs\comicbook-layouts.json" Condition="'$(OverrideConfigDir)' == '' or !Exists('$(OverrideConfigDir)\comicbook-layouts.json')" LogicalName="BananaBridge.UI.comicbook-layouts.json" />
+
+    <!-- comicbook-styles.json -->
+    <EmbeddedResource Include="$(OverrideConfigDir)\comicbook-styles.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\comicbook-styles.json')" LogicalName="BananaBridge.UI.comicbook-styles.json" />
+    <EmbeddedResource Include="..\JsonConfigs\comicbook-styles.json" Condition="'$(OverrideConfigDir)' == '' or !Exists('$(OverrideConfigDir)\comicbook-styles.json')" LogicalName="BananaBridge.UI.comicbook-styles.json" />
+
+    <!-- locations-types.json -->
+    <EmbeddedResource Include="$(OverrideConfigDir)\locations-types.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\locations-types.json')" LogicalName="BananaBridge.UI.locations-types.json" />
+    <EmbeddedResource Include="..\JsonConfigs\locations-types.json" Condition="'$(OverrideConfigDir)' == '' or !Exists('$(OverrideConfigDir)\locations-types.json')" LogicalName="BananaBridge.UI.locations-types.json" />
+
+    <!-- character-species-data.json -->
+    <EmbeddedResource Include="$(OverrideConfigDir)\character-species-data.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\character-species-data.json')" LogicalName="BananaBridge.UI.character-species-data.json" />
+    <EmbeddedResource Include="..\JsonConfigs\character-species-data.json" Condition="'$(OverrideConfigDir)' == '' or !Exists('$(OverrideConfigDir)\character-species-data.json')" LogicalName="BananaBridge.UI.character-species-data.json" />
+
+    <!-- character-personality-data.json -->
+    <EmbeddedResource Include="$(OverrideConfigDir)\character-personality-data.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\character-personality-data.json')" LogicalName="BananaBridge.UI.character-personality-data.json" />
+    <EmbeddedResource Include="..\JsonConfigs\character-personality-data.json" Condition="'$(OverrideConfigDir)' == '' or !Exists('$(OverrideConfigDir)\character-personality-data.json')" LogicalName="BananaBridge.UI.character-personality-data.json" />
+
+    <!-- character-visual-data.json -->
+    <EmbeddedResource Include="$(OverrideConfigDir)\character-visual-data.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\character-visual-data.json')" LogicalName="BananaBridge.UI.character-visual-data.json" />
+    <EmbeddedResource Include="..\JsonConfigs\character-visual-data.json" Condition="'$(OverrideConfigDir)' == '' or !Exists('$(OverrideConfigDir)\character-visual-data.json')" LogicalName="BananaBridge.UI.character-visual-data.json" />
+
+    <!-- layout.json -->
+    <EmbeddedResource Include="$(OverrideConfigDir)\layout.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\layout.json')" LogicalName="BananaBridge.UI.layout.json" />
+    <EmbeddedResource Include="..\JsonConfigs\layout.json" Condition="'$(OverrideConfigDir)' == '' or !Exists('$(OverrideConfigDir)\layout.json')" LogicalName="BananaBridge.UI.layout.json" />
+
+    <!-- Additional optional styles present in override folder -->
+    <EmbeddedResource Include="$(OverrideConfigDir)\styles-american.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\styles-american.json')" LogicalName="BananaBridge.UI.styles-american.json" />
+    <EmbeddedResource Include="$(OverrideConfigDir)\styles-ancient.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\styles-ancient.json')" LogicalName="BananaBridge.UI.styles-ancient.json" />
+    <EmbeddedResource Include="$(OverrideConfigDir)\styles-asian.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\styles-asian.json')" LogicalName="BananaBridge.UI.styles-asian.json" />
+    <EmbeddedResource Include="$(OverrideConfigDir)\styles-european.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\styles-european.json')" LogicalName="BananaBridge.UI.styles-european.json" />
+    <EmbeddedResource Include="$(OverrideConfigDir)\styles-historical.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\styles-historical.json')" LogicalName="BananaBridge.UI.styles-historical.json" />
+    <EmbeddedResource Include="$(OverrideConfigDir)\styles-horror.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\styles-horror.json')" LogicalName="BananaBridge.UI.styles-horror.json" />
+    <EmbeddedResource Include="$(OverrideConfigDir)\styles-literary.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\styles-literary.json')" LogicalName="BananaBridge.UI.styles-literary.json" />
+    <EmbeddedResource Include="$(OverrideConfigDir)\styles-science-fiction.json" Condition="'$(OverrideConfigDir)' != '' and Exists('$(OverrideConfigDir)\styles-science-fiction.json')" LogicalName="BananaBridge.UI.styles-science-fiction.json" />
+  </ItemGroup>
+</Project>
+

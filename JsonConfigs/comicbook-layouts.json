@@ -1,0 +1,16 @@
+{
+  "layouts": [
+    {
+      "format": "Modern U.S. Comic Book",
+      "height_inches": 10.25,
+      "width_inches": 6.625,
+      "description": "Current standard size for monthly comic book issues."
+    },
+    {
+      "format": "Manga (Tankobon)",
+      "height_inches": 7.16,
+      "width_inches": 5.04,
+      "description": "Standard collected digest format for Japanese manga."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "human": {
+    "description": "Human protagonist with expressive face and agile build.",
+    "traits": [
+      "expressive face",
+      "heroic proportions"
+    ]
+  },
+  "robot": {
+    "description": "Mechanical autonomous unit with synthetic chassis.",
+    "traits": [
+      "metallic chassis",
+      "glowing optics"
+    ]
+  }
+}

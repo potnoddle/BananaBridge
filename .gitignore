@@ -1,0 +1,6 @@
+.vs
+bin
+obj
+
+# Private backups and config overrides (not available publicly)
+JsonConfigs.Override/
